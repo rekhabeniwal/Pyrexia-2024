@@ -18,9 +18,9 @@ import Splashtees from "../Image/Splash tees.png";
 import SoulSync from "../Image/Soul Sync.JPG";
 import Songstravaganza from "../Image/Songstravaganza.webp";
 // import Rythm revolution from "../Image/Rythm revolution.jpeg";
-// import Rip n Stitch from "../Image/Rip n Stitch.png";
+import RipnStitch from "../Image/Rip n Stitch.png";
 
-// import Prose the pictures from "../Image/Prose the pictures.png";
+import Prose from "../Image/Prose the pictures.png";
 import Pictionary from "../Image/Pictionary.webp";
 import Paperdance from "../Image/Paper dance.webp";
 import NukkadNatak from "../Image/Nukkad Natak.webp";
@@ -44,7 +44,7 @@ import Euphonia from "../Image/Euphonia.jpeg";
 import Echoes from "../Image/Echoes and Expressions.webp";
 import Drapeit from "../Image/Drape it.JPG";
 import DartySecrets from "../Image/Darty Secrets.JPG";
-// import Cupid's Countdown from "../Image/Cupid's Countdown.jpg";
+import Cupid from "../Image/Cupid's Countdown.jpg";
 import Cupful from "../Image/Cupful of doodles.png";
 import Cricket from "../Image/Cricket.PNG";
 import ContrastChronicles from "../Image/Contrast chronicles.png";
@@ -1027,10 +1027,10 @@ const EventPage = () => {
         rulebook: "https://drive.google.com/file/d/1NBITEXWYSS-57Y15483vNZe8LAc-ImM_/view?usp=drive_link",
         link:"https://forms.gle/1AnbygQnogpMvM7KA"
       }, {
-        title: "Found poetry",
+        title: "Rip n Stitch",
         registrationFees: "Rs. 50 per person",
         status: "Inactive",
-        image: "",
+        image: RipnStitch,
         tagline: '',
         description: "This event is about seeing the world through a fresh lens, where words already exist but their new arrangement tells a different story. Dive into the world of found poetry, where creativity knows no bounds and inspiration is everywhere.",
         teamSize: "",
@@ -1051,10 +1051,10 @@ const EventPage = () => {
         link:""
       },
       {
-        title: "Literary Speed Dating",
+        title: "Cupid's Countdown",
         registrationFees: "Rs.60/- per person",
         status: "Inactive",
-        image: "",
+        image: Cupid,
         tagline: '',
         description: " An event of literary connections where book lovers, aspiring writers, and literary enthusiasts come together to share their passions in a fast-paced, engaging format. In this unique event, you'll have the opportunity to meet a diverse range of fellow bibliophiles and discuss your favorite books, authors, and literary genres in brief, dynamic conversations that would ultimately decide your fate in the game.",
         teamSize: "",
@@ -1099,10 +1099,10 @@ const EventPage = () => {
         link:"https://forms.gle/4rkzEWgussYkPwhx7"
       },
       {
-        title: "Rhapsody",
+        title: "Prose the Pictures",
         registrationFees: "Rs. 50/- per person",
         status: "Inactive",
-        image: "",
+        image: "Prose",
         tagline: '',
         description: "Welcome to Rhapsody, where a series of evocative images guide your words to create a story that resonates them. Each picture holds a piece of a story—waiting for you to bring it to life.",
         teamSize: "",
@@ -2108,7 +2108,7 @@ const EventPage = () => {
         registrationFees: "500 per person",
         status: "Inactive",
         image: Chronos,
-        tagline: 'Mr. & Mrs. Pyrexia',
+        tagline: 'Mr. & Ms. Pyrexia',
         description: "",
         teamSize: "",
         minteamSize: "",
