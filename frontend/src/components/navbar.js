@@ -30,13 +30,15 @@ const Navbar = () => {
         }
       });
   };
-
-  const buttonClasses = 'text-gray-100 font-bold text-sm px-2 py-1 border-2 border-gray-100 hover:bg-gray-100 hover:text-gray-800 rounded-lg transition duration-300';
+  const handleEventClick = () => {
+    navigate('/events', { state: { activeEvent: 'All Events' } });
+  };
+  const buttonClasses = 'text-gray-100  flex justify-center font-bold text-sm px-2 py-1 border-2 border-gray-100 hover:bg-gray-100 hover:text-gray-800 rounded-lg transition duration-300';
 
   const loggedInButtons = (
     <>
       <Link to="/" className={buttonClasses}>Home</Link>
-     <Link to ="/events" className={buttonClasses}>Events</Link>
+     <button className={buttonClasses} onClick={()=> handleEventClick()}>Events</button>
       {/* <a href="/profile" className={buttonClasses}>Profile</a> */}
       <Link to="/starnight" className={buttonClasses}>Star Night</Link>
       <a href="https://drive.google.com/file/d/12CP4PlhrVhJ4Hi_NVYIhn5B-wWi2q3kr/view?usp=drive_link" className={buttonClasses}>Brochure</a>
@@ -49,7 +51,7 @@ const Navbar = () => {
   const loggedOutButtons = (
     <>
       <Link to="/" className={buttonClasses}>Home</Link>
-      <Link to="/events" className={buttonClasses}>Events</Link>
+      <button className={buttonClasses}onClick={()=> handleEventClick()}>Events</button>
       <Link to="/starnight" className={buttonClasses}>Star Night</Link>
       <a href="https://drive.google.com/file/d/12CP4PlhrVhJ4Hi_NVYIhn5B-wWi2q3kr/view?usp=drive_link" className={buttonClasses}>Brochure</a>
       <Link to="/accomodation" className={buttonClasses}>Accomodation</Link>
@@ -59,7 +61,7 @@ const Navbar = () => {
   );
   
   return (
-    <nav className='bg-[#001f3f] text-white fixed top-0 left-0 w-full z-30 position-fixed'>
+    <nav className='bg-[#001f3f] text-white fixed top-0 left-0 w-full z-50 position-fixed'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex items-center justify-between h-16'>
           <div className='flex flex-row w-full justify-between'>
@@ -84,7 +86,7 @@ const Navbar = () => {
         </div>
       </div>
       {isOpen && (
-        <div className='flex flex-col gap-y-2 md:hidden px-4 sm:px-6 pb-2'>
+        <div className='flex flex-col gap-y-2 md:hidden px-4 sm:px-6 pb-2' onClick={() => setIsOpen(!isOpen)}>
           {isLoggedIn ? loggedInButtons : loggedOutButtons}
         </div>
       )}
