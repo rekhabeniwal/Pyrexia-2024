@@ -37,7 +37,7 @@ const Home = () => {
           <LeftVideoAnimation
             videoSrc={video1}
             videoAlt="Sample Video"
-            videoClasses="mx-auto lg:w-[70%] md:w-[60%] w-[100%] min-h-screen mt-16 md:mt-20"
+            videoClasses="mx-auto lg:w-[70%] md:w-[60%] w-[100%] min-h-screen mt-6 md:mt-20"
           />
           {/* Text and Buttons */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4 top-1/3 lg:top-0">
