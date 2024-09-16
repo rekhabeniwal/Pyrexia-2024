@@ -6,7 +6,7 @@ import { Navigation } from 'swiper/modules';
 import { useNavigate } from 'react-router-dom';
 import Alfresco from '../Logos/Alfresco.jpg';
 import Kalakriti from  '../Logos/Kalakriti .jpg';
-import Littmania from  '../Logos/Littmania.PNG';
+import LITtMania from  '../Logos/Littmania.PNG';
 import Sinfonia from  '../Logos/Sinfonia.jpg';
 import Velocity from  '../Logos/Velocity.jpg';
 import Thunderbolt from '../Logos/ThunderBolts.webp';
@@ -18,7 +18,7 @@ const images = [
   { src: Chorea, title: 'Chorea' , events: 'Chorea' },
   { src: Chronos, title: 'Chronos' ,events:'Chronos'},
   { src: Kalakriti, title: 'Kalakriti', events:'Kalakriti'},
-  { src: Littmania, title: 'Littmania', events:'Littmania'},
+  { src: LITtMania, title: 'LITtMania', events:'LITtMania'},
    { src: Sinfonia, title: 'Sinfonia', events:'Sinfonia'},
   { src: Thespians, title: 'Thespians' ,events:'Thespians'},
   { src: Thunderbolt, title: 'Thunderbolt', events:'Thunderbolt'},
