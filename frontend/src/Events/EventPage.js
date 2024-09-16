@@ -2105,7 +2105,7 @@ const EventPage = () => {
     'Chronos': [
       {
         title: "Chronos",
-        registrationFees: "",
+        registrationFees: "500 per person",
         status: "Inactive",
         image: Chronos,
         tagline: 'Mr. & Mrs. Pyrexia',
