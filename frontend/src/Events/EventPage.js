@@ -29,8 +29,8 @@ import MusicalChairs from "../Image/Musical Chairs.webp";
 import Metallica  from "../Image/Metallica_.jpg";
 import mehendimania from "../Image/mehendi mania.png";
 import MaddAngle from "../Image/Madd Angle.JPG";
-// import Kavyotsav from "../Image/Kavyotsav.png";
-// import Kabbadi from "../Image/Kabbadi.PNG";
+import Kavyotsav from "../Image/Kavyotsav.png";
+import Kabbadi from "../Image/Kabbadi.PNG";
 import JAM from "../Image/JAM.png";
 
 // import IMG_20240915_161502_033 from "../Image/IMG_20240915_161502_033.jpg";
@@ -45,7 +45,7 @@ import Echoes from "../Image/Echoes and Expressions.webp";
 import Drapeit from "../Image/Drape it.JPG";
 import DartySecrets from "../Image/Darty Secrets.JPG";
 // import Cupid's Countdown from "../Image/Cupid's Countdown.jpg";
-// import Cupful of doodles from "../Image/Cupful of doodles.png";
+import Cupful from "../Image/Cupful of doodles.png";
 import Cricket from "../Image/Cricket.PNG";
 import ContrastChronicles from "../Image/Contrast chronicles.png";
 import ComicCombat from "../Image/Comic Combat.webp";
@@ -634,7 +634,7 @@ const EventPage = () => {
         date: '10-Oct-2024',
         venue: 'Mini Audi',
         time: '10:30AM- 12:30 PM',
-        rulebook: "",
+        rulebook: "https://drive.google.com/file/d/1NrMerwfHuF9ouFYzvTwyEwfY6DRCgFZU/view?usp=drive_link",
         link: "https://forms.gle/n4dsMxyxBJJFJAeV6"
       },
 
@@ -659,7 +659,7 @@ const EventPage = () => {
         date: '10-Oct-2024',
         venue: 'Mini Audi',
         time: '1:30-3:00 PM',
-        rulebook: "",
+        rulebook: "https://drive.google.com/file/d/1YD3GHczjsnO5MIqSA70o5oKc650yl5Zn/view?usp=drive_link",
         link: "https://forms.gle/pk2yhd9K5BiNkTd46"
       },
       {
@@ -683,7 +683,7 @@ const EventPage = () => {
         date: '11-Oct-2024',
         venue: 'Mini Audi',
         time: '1:30-3:30 PM',
-        rulebook: "",
+        rulebook: "https://drive.google.com/file/d/1jbNiS-caufF9clRf34ay9h_HH5ojqZY9/view?usp=drive_link",
         link: "https://forms.gle/btLcQrAa4UhATvZu7"
       },
       {
@@ -707,7 +707,7 @@ const EventPage = () => {
         date: '10:00AM- 12:30 PM',
         venue: 'Mini Audi',
         time: '12-Oct-2024',
-        rulebook: "",
+        rulebook: "https://drive.google.com/file/d/1ufw8E8UmB1gz-46uPcWgXV9Qrjij-rea/view?usp=drive_link",
         link: "https://forms.gle/zPt19DUj3Cwadj2X8"
       },
 
@@ -732,7 +732,8 @@ const EventPage = () => {
         date: '12-Oct-2024',
         venue: 'Mini Audi',
         time: '1:30-3:30 PM',
-        rulebook: ""
+        rulebook: "https://drive.google.com/file/d/1FBhXqt3drhK5KzursR0hWPBWXE6kgAaZ/view?usp=drive_link",
+        link:"https://forms.gle/ZuzAqzwXXcsno4vG7"
       },
       {
         title: "Contrast Chronicles",
@@ -755,8 +756,32 @@ const EventPage = () => {
         date: '13-Oct-2024',
         venue: 'Mini audi',
         time: '1:30-3:00 PM',
-        rulebook: "",
+        rulebook: "https://drive.google.com/file/d/1C1Y3_07FvmLL-jal7AKMpMp26i7CWaxE/view?usp=drive_link",
         link: "https://forms.gle/JLJ9GakYVRPPYcKH9"
+      },
+       {
+        title: "Cupful of Doodles",
+        registrationFees: "₹20 per individual",
+        status: "Inactive",
+        image: Cupful,
+        tagline: 'Get ready to embark on an unforgettable journey of ink- spiration!',
+        description: "Calling all doodle enthusiasts and artistic daydreamers! This is your chance to let your pen dance on paper cups and weave stories through your strokes.",
+      teamSize: "",
+      minteamSize: "1",
+      maxteamSize: "4",
+      fees: { perTeam: "", perPerson: "20", singleBoy: "", singleGirl: "", Couple: "", Solo: "", Duet: "", perhead: "" },
+      contact1Name: '',
+      contact1: '',
+      contact2Name: '',
+      contact2: '',
+      contact3Name: '',
+      contact3: '',
+      prize: "",
+      date: '13-Oct-2024',
+      venue: 'Mini Audi',
+      time: '1:30 PM- 3:00 PM',
+      rulebook: "https://drive.google.com/file/d/1Vq-_aiT1tTjwukbXvwjrvaTyqnnftwGc/view?usp=drive_link",
+      link: "https://forms.gle/KjcZJNQKYL5mi1oc8"
       },
 
       {
@@ -780,7 +805,7 @@ const EventPage = () => {
         date: '  14-Oct-2024 ',
         venue: 'Mini Audi',
         time: '10:00AM- 12:00 PM',
-        rulebook: "",
+        rulebook: "https://drive.google.com/file/d/1rh8QVqUhSm860rdUk6Kqn3DQEx4LJNfw/view?usp=drive_link",
         link: "https://forms.gle/WUT3S18HVhiRSgHh7"
       },
       {
@@ -804,7 +829,7 @@ const EventPage = () => {
         date: ' 14-Oct-2024 ',
         venue: 'Mini Audi',
         time: '1:30PM- 3:00 PM',
-        rulebook: "",
+        rulebook: "https://drive.google.com/file/d/1JgOKMhxH-S7jN5d-ECLJKeSXolrpno8u/view?usp=drive_link",
         link: "https://forms.gle/VLECJmo986s7MK6Y9"
       },
       {
@@ -828,12 +853,12 @@ const EventPage = () => {
         date: '14-Oct-2024',
         venue: 'Mini Audi',
         time: '3:15PM- 5:15PM',
-        rulebook: "",
+        rulebook: "https://drive.google.com/file/d/1ZZym4B5AXPL_xBMn-B38Vns9ZxgOkyKk/view?usp=drive_link",
         link: "https://forms.gle/fqc9mfWfciWMqmM27"
       },
 
     ],
-    "Littmania": [
+    "LITtMania": [
       {
         title: "Cineholics",
         registrationFees: "Rs.60 for team of 3 || Rs. 50 for team of 2  || Rs.30 for lonewolves",
@@ -886,7 +911,7 @@ const EventPage = () => {
         title: "Biocrux Jr.(MedQuiz)",
         registrationFees: "Rs. 180/- per team",
         status: "Inactive",
-        image: "",
+        image: biocruxJr,
         tagline: '',
         description: "Subjects: All pre and para clinical subjects",
         teamSize: "",
@@ -931,7 +956,7 @@ const EventPage = () => {
         link: "https://forms.gle/F4kZ7VUNVDEEUV3W7"
       },
       {
-        title: "Anime Quiz",
+        title: "Anime No Tatakai",
         registrationFees: "Rs. 180/- for a team of 4",
         status: "Inactive",
         image: AnimeQuiz,
@@ -951,7 +976,8 @@ const EventPage = () => {
         date: '14 October 2024',
         venue: 'LT3',
         time: '9:00am',
-        rulebook: "https://drive.google.com/file/d/1cAHUib62XU5gRm873b3I5qa_BN5CdAQ5/view?usp=drive_link"
+        rulebook: "https://drive.google.com/file/d/1cAHUib62XU5gRm873b3I5qa_BN5CdAQ5/view?usp=drive_link",
+        link:"https://forms.gle/P2GYqXQ4WR64gqSQ7"
       },
       {
         title: "Iconic Impressions ",
@@ -974,7 +1000,8 @@ const EventPage = () => {
         date: '',
         venue: '',
         time: '',
-        rulebook: "https://drive.google.com/file/d/1NufiXpkxR7j9dQY-J61uEcUgG2o05fbi/view?usp=drive_link"
+        rulebook: "https://drive.google.com/file/d/1NufiXpkxR7j9dQY-J61uEcUgG2o05fbi/view?usp=drive_link",
+        link:"https://forms.gle/EMUg3N3MK9Rqfig49"
       },
       {
         title: "Unstory",
@@ -997,7 +1024,8 @@ const EventPage = () => {
         date: '',
         venue: '',
         time: '',
-        rulebook: "https://drive.google.com/file/d/1NBITEXWYSS-57Y15483vNZe8LAc-ImM_/view?usp=drive_link"
+        rulebook: "https://drive.google.com/file/d/1NBITEXWYSS-57Y15483vNZe8LAc-ImM_/view?usp=drive_link",
+        link:"https://forms.gle/1AnbygQnogpMvM7KA"
       }, {
         title: "Found poetry",
         registrationFees: "Rs. 50 per person",
@@ -1019,7 +1047,8 @@ const EventPage = () => {
         date: '',
         venue: '',
         time: '',
-        rulebook: ""
+        rulebook: "",
+        link:""
       },
       {
         title: "Literary Speed Dating",
@@ -1042,13 +1071,14 @@ const EventPage = () => {
         date: '',
         venue: '',
         time: '',
-        rulebook: ""
+        rulebook: "",
+        link:""
       },
       {
-        title: "Kavi Sammelan:",
+        title: "Kavyotsav:",
         registrationFees: "Rs. 60/- per person",
         status: "Inactive",
-        image: "",
+        image: Kavyotsav,
         tagline: '',
         description: "एक ऐसा मंच जहाँ शब्दों की अद्भुत कलाकारी और भावनाओं की गहराई का अनुभव होता है। यह साहित्यिक मिलन का अवसर है, जहाँ हर कविता एक नई सोच और दृष्टिकोण को प्रस्तुत करती है।",
         teamSize: "",
@@ -1065,7 +1095,8 @@ const EventPage = () => {
         date: '',
         venue: '',
         time: '',
-        rulebook: "https://drive.google.com/file/d/1qyi7BKSrtp0yUk85CWcKrWKuKxp3pf3a/view?usp=drive_link"
+        rulebook: "https://drive.google.com/file/d/1qyi7BKSrtp0yUk85CWcKrWKuKxp3pf3a/view?usp=drive_link",
+        link:"https://forms.gle/4rkzEWgussYkPwhx7"
       },
       {
         title: "Rhapsody",
@@ -1088,31 +1119,32 @@ const EventPage = () => {
         date: '',
         venue: '',
         time: '',
-        rulebook: ""
+        rulebook: "",
+        link:""
       },
-      {
-        title: "Biocrux Jr",
-        registrationFees: "Rs. 180/- per team || Rs. 60/- per person",
-        status: "Inactive",
-        image: biocruxJr,
-        tagline: '',
-        description: "Subjects: All pre and para clinical subjects.",
-        teamSize: "",
-        minteamSize: "1",
-        maxteamSize: "4",
-        fees: { perTeam: "180", perPerson: "60", singleBoy: "", singleGirl: "", Couple: "", Solo: "", Duet: "", perhead: "" },
-        contact1Name: '',
-        contact1: '',
-        contact2Name: '',
-        contact2: '',
-        contact3Name: '',
-        contact3: '',
-        prize: "",
-        date: '',
-        venue: '',
-        time: '',
-        rulebook: "https://drive.google.com/file/d/1L9qMfCZdMDlXgDPMq3P1zP8zKvfXKzkI/view?usp=drive_link"
-      },
+      // {
+      //   title: "Biocrux Jr",
+      //   registrationFees: "Rs. 180/- per team || Rs. 60/- per person",
+      //   status: "Inactive",
+      //   image: biocruxJr,
+      //   tagline: '',
+      //   description: "Subjects: All pre and para clinical subjects.",
+      //   teamSize: "",
+      //   minteamSize: "1",
+      //   maxteamSize: "4",
+      //   fees: { perTeam: "180", perPerson: "60", singleBoy: "", singleGirl: "", Couple: "", Solo: "", Duet: "", perhead: "" },
+      //   contact1Name: '',
+      //   contact1: '',
+      //   contact2Name: '',
+      //   contact2: '',
+      //   contact3Name: '',
+      //   contact3: '',
+      //   prize: "",
+      //   date: '',
+      //   venue: '',
+      //   time: '',
+      //   rulebook: "https://drive.google.com/file/d/1L9qMfCZdMDlXgDPMq3P1zP8zKvfXKzkI/view?usp=drive_link"
+      // },
       {
         title: "The War of Wits(Debate Competition)",
         registrationFees: "Rs. 60/- per person",
@@ -1134,7 +1166,8 @@ const EventPage = () => {
         date: '',
         venue: '',
         time: '',
-        rulebook: "https://drive.google.com/file/d/1flSNXaDMXyqxkM-DnQrIC-XLde8o84hY/view?usp=drive_link"
+        rulebook: "https://drive.google.com/file/d/1flSNXaDMXyqxkM-DnQrIC-XLde8o84hY/view?usp=drive_link",
+        link:"https://forms.gle/fCMUkxaTqoJ41iHS6"
       },
       {
         title: "JAM",
@@ -1157,7 +1190,8 @@ const EventPage = () => {
         date: '',
         venue: '',
         time: '',
-        rulebook: "https://drive.google.com/file/d/1sf1IW6e801X-LdYbL7Zv4ibgpz9FNkXr/view?usp=drive_link"
+        rulebook: "https://drive.google.com/file/d/1sf1IW6e801X-LdYbL7Zv4ibgpz9FNkXr/view?usp=drive_link",
+        link:"https://forms.gle/gSSjY1xxFCugHxDa9"
       },
 
 
@@ -1702,7 +1736,7 @@ const EventPage = () => {
         venue: '',
         time: '',
         rulebook: "https://drive.google.com/file/d/1XnONVNs2A3wyscu3RSvj7Lumv3ete_Dj/view?usp=drive_link",
-        link: ""
+        link: "https://forms.gle/TRmVukDEyVtESqZt5"
       },
       {
         title: "Table Tennis Doubles",
@@ -1725,7 +1759,8 @@ const EventPage = () => {
         date: '',
         venue: '',
         time: '',
-        rulebook: "https://drive.google.com/file/d/1mtzo0-RRNJ8zVRqc0KI2TL2BtY063H6B/view?usp=drive_link"
+        rulebook: "https://drive.google.com/file/d/1mtzo0-RRNJ8zVRqc0KI2TL2BtY063H6B/view?usp=drive_link",
+        link:"https://forms.gle/TRmVukDEyVtESqZt5"
       },
       {
         title: "Table Tennis Mixed Doubles",
@@ -1748,13 +1783,14 @@ const EventPage = () => {
         date: '',
         venue: '',
         time: '',
-        rulebook: "https://drive.google.com/file/d/1mtzo0-RRNJ8zVRqc0KI2TL2BtY063H6B/view?usp=drive_link"
+        rulebook: "https://drive.google.com/file/d/1mtzo0-RRNJ8zVRqc0KI2TL2BtY063H6B/view?usp=drive_link",
+        link:"https://forms.gle/TRmVukDEyVtESqZt5"
       },
       {
         title: "Girls Kabaddi",
         registrationFees: "1000",
         status: "Inactive",
-        image: "https://example.com/subevent1_1.jpg",
+        image:Kabbadi,
         tagline: '',
         description: "",
         teamSize: "",
@@ -1778,7 +1814,7 @@ const EventPage = () => {
         title: "Boys Kabaddi",
         registrationFees: "1200",
         status: "Inactive",
-        image: "https://example.com/subevent1_1.jpg",
+        image: Kabbadi,
         tagline: '',
         description: "",
         teamSize: "",
@@ -1917,7 +1953,7 @@ const EventPage = () => {
         venue: '',
         time: '',
         rulebook: "https://drive.google.com/file/d/158g-A6uqIk56J9yKOzJcWx5jlGiHHoXh/view?usp=drive_link",
-        link: "https://forms.gle/TRmVukDEyVtESqZt5"
+        link: "https://forms.gle/YYRt1Kkhr7hpzQPt5"
       },
       {
         title: "Tennis Doubles",
@@ -1941,7 +1977,7 @@ const EventPage = () => {
         venue: '',
         time: '',
         rulebook: "https://drive.google.com/file/d/158g-A6uqIk56J9yKOzJcWx5jlGiHHoXh/view?usp=drive_link",
-        link: "https://forms.gle/TRmVukDEyVtESqZt5"
+        link: "https://forms.gle/YYRt1Kkhr7hpzQPt5"
       },
       {
         title: "Tennis Mixed Doubles",
@@ -1965,7 +2001,7 @@ const EventPage = () => {
         venue: '',
         time: '',
         rulebook: "https://drive.google.com/file/d/158g-A6uqIk56J9yKOzJcWx5jlGiHHoXh/view?usp=drive_link",
-        link: "https://forms.gle/TRmVukDEyVtESqZt5"
+        link: "https://forms.gle/YYRt1Kkhr7hpzQPt5"
       },
       {
         title: "Chess",
