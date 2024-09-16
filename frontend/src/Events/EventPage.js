@@ -26,7 +26,7 @@ import Paperdance from "../Image/Paper dance.webp";
 import NukkadNatak from "../Image/Nukkad Natak.webp";
 import Nrityasangam from "../Image/Nritya sangam.JPG";
 import MusicalChairs from "../Image/Musical Chairs.webp";
-import Metallica  from "../Image/Metallica_.jpg";
+import Metallica from "../Image/Metallica_.jpg";
 import mehendimania from "../Image/mehendi mania.png";
 import MaddAngle from "../Image/Madd Angle.JPG";
 import Kavyotsav from "../Image/Kavyotsav.png";
@@ -61,9 +61,9 @@ import BlossomingSteps from "../Image/Blossoming Steps.jpeg";
 import BiocruxSr from "../Image/Biocrux Sr..jpg";
 import biocruxJr from "../Image/biocrux Jr..jpg";
 import Battleofbands from "../Image/Battle of bands.jpeg";
-import Basketball  from "../Image/Basketball .PNG";
+import Basketball from "../Image/Basketball .PNG";
 import Ballismus from "../Image/Ballismus.webp";
-import Badminton  from "../Image/Badminton .PNG";
+import Badminton from "../Image/Badminton .PNG";
 import AnimeQuiz from "../Image/Anime no tatakai.jpg";
 import Adaptune from "../Image/ADaptune.jpeg";
 import Acrylicodyssey from "../Image/Acrylic odyssey.png";
@@ -74,21 +74,25 @@ const EventPage = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeEvent, setActiveEvent] = useState("All Events");
 
+
+
+
+  useEffect(() => {
+    if (location.state?.activeEvent) {
+      setActiveEvent(location.state.activeEvent);
+    }
+  }, [location.state]);
+
   useEffect(() => {
     if (eventHome) {
       setActiveEvent(eventHome);
     }
   }, [eventHome]);
 
+
   const navigate = useNavigate(); // React Router's navigate for navigation
 
-  const openNav = () => {
-    setIsOpen(true);
-  };
 
-  const closeNav = () => {
-    setIsOpen(false);
-  };
 
 
   const events = {
@@ -462,30 +466,30 @@ const EventPage = () => {
         rulebook: "https://drive.google.com/file/d/1Y1FfOlcL2DeLq0cQgePHc-6nZsQEEJw5/view?usp=drive_link",
         link: "https://forms.gle/jV4jKHiFm4kaGkSR8"
       },
-      {
-        title: "Balloon Burst",
-        registrationFees: "40 per team",
-        status: "Inactive",
-        image: "",
-        tagline: '',
-        description: "Join the ultimate Balloon Burst Frenzy, where the fun never stops and every pop counts!! It’s a race against the clock and your friends- who will rise to the top as the ultimate balloon buster? Ready, set, burst!!!",
-        teamSize: "",
-        minteamSize: "1",
-        maxteamSize: "15",
-        fees: { perTeam: "40", perPerson: "", singleBoy: "", singleGirl: "", Couple: "", Solo: "", Duet: "", perhead: "", },
-        contact1Name: '',
-        contact1: '',
-        contact2Name: '',
-        contact2: '',
-        contact3Name: '',
-        contact3: '',
-        prize: "",
-        date: '',
-        venue: '',
-        time: '',
-        rulebook: "",
-        link: ""
-      },
+      // {
+      //   title: "Balloon Burst",
+      //   registrationFees: "40 per team",
+      //   status: "Inactive",
+      //   image: "",
+      //   tagline: '',
+      //   description: "Join the ultimate Balloon Burst Frenzy, where the fun never stops and every pop counts!! It’s a race against the clock and your friends- who will rise to the top as the ultimate balloon buster? Ready, set, burst!!!",
+      //   teamSize: "",
+      //   minteamSize: "1",
+      //   maxteamSize: "15",
+      //   fees: { perTeam: "40", perPerson: "", singleBoy: "", singleGirl: "", Couple: "", Solo: "", Duet: "", perhead: "", },
+      //   contact1Name: '',
+      //   contact1: '',
+      //   contact2Name: '',
+      //   contact2: '',
+      //   contact3Name: '',
+      //   contact3: '',
+      //   prize: "",
+      //   date: '',
+      //   venue: '',
+      //   time: '',
+      //   rulebook: "",
+      //   link: ""
+      // },
       // More events...
     ],
     "Chorea": [
@@ -510,7 +514,7 @@ const EventPage = () => {
         date: '',
         venue: '',
         time: '',
-        rulebook: "https://drive.google.com/file/d/1Q9vZsmt70Fi9HolqA0xVdrNbzSCFyYL_/view?usp=drive_link",
+        rulebook: "https://drive.google.com/file/d/1keAHz4LTwfOBzJbyDypOnCOAoj6bhNe3/view?usp=sharing",
         link: "https://forms.gle/EwXsXLp4ViiaeC487"
       },
       {
@@ -534,7 +538,7 @@ const EventPage = () => {
         date: '',
         venue: '',
         time: '',
-        rulebook: "https://drive.google.com/file/d/1F7xah0Eg0EjdWMpfjt4lG82WbHedlZ0o/view?usp=drive_link",
+        rulebook: "https://drive.google.com/file/d/1VpcB9BTm26S2SBMvxz4F0seVD5yGfUpA/view?usp=sharing",
         link: "https://forms.gle/TdYq3iqqrhgfjUAs6"
       },
       {
@@ -558,7 +562,7 @@ const EventPage = () => {
         date: '',
         venue: '',
         time: '',
-        rulebook: "https://drive.google.com/file/d/1loHlXShy4UrsYyS_PvuVoY8qcidAA1Oc/view?usp=drive_link",
+        rulebook: "https://drive.google.com/file/d/1OUrata8zL2Bz7l_GFeDwpbh1tNq0ysdb/view?usp=sharing",
         link: "https://forms.gle/ZQncr7wdD9E2kAHQA"
       },
       {
@@ -582,7 +586,7 @@ const EventPage = () => {
         date: '',
         venue: '',
         time: '',
-        rulebook: "https://drive.google.com/file/d/17nVDakfL9nVjZ-XTLBhGditnBKlTeEsZ/view",
+        rulebook: "https://drive.google.com/file/d/1g-bh9C8WaEoGqA-BtNsLwGqYs7_6RQmt/view?usp=sharing",
         link: "https://forms.gle/BhUFYRNz89zipBwk6"
       },
       {
@@ -606,7 +610,7 @@ const EventPage = () => {
         date: '',
         venue: '',
         time: '',
-        rulebook: "https://drive.google.com/file/d/1gIpufCBxabeJpQaqbvAn3YXh_B-LRFAo/view?usp=drive_link",
+        rulebook: "https://drive.google.com/file/d/115tiaKOydNJt64b5S2BdABPn9Q9JH933/view?usp=sharing",
         link: "https://docs.google.com/forms/d/e/1FAIpQLSfwu56HI6wrbXSFdy_1HWbYAD_-F_qPB71o4HE-RACx7iT3FA/viewform?usp=sf_link"
       },
 
@@ -880,7 +884,7 @@ const EventPage = () => {
         date: '10 October, 2024',
         venue: 'LT3',
         time: '9:00am',
-        rulebook: "https://drive.google.com/file/d/1BxX2XTXjOZErnUdu_hUpmvpoaZgIxJ_3/view?usp=drive_link",
+        rulebook: "https://drive.google.com/file/d/140YuUwe20Od1f9VubrJnoeJuN2Ptc9xp/view?usp=sharing",
         link: "https://forms.gle/Q5pdfPa3rpkUNmA37"
       },
       {
@@ -904,7 +908,7 @@ const EventPage = () => {
         date: '11th October , 2024 ',
         venue: '',
         time: '9:00 A.M',
-        rulebook: "https://drive.google.com/file/d/1vRT1WzhpwcX0iH5DPnKfYni5lcMr_QK-/view?usp=drive_link",
+        rulebook: "https://drive.google.com/file/d/1XcjO3pjdMVKS8sFhzVNnqaXyRo1zufJp/view?usp=sharing",
         link: "https://forms.gle/YMijC99gEmvZoeHZ7"
       },
       {
@@ -928,7 +932,7 @@ const EventPage = () => {
         date: '12/10/2024',
         venue: '',
         time: '09.00 AM onwards',
-        rulebook: "https://drive.google.com/file/d/1L9qMfCZdMDlXgDPMq3P1zP8zKvfXKzkI/view?usp=drive_link",
+        rulebook: "https://drive.google.com/file/d/17m1G_5CFdnRadLO8Ycy0tFW1f1Ux6pp-/view?usp=sharing",
         link: "https://forms.gle/oy9tEnWickw7EF7Y8"
       },
       {
@@ -952,7 +956,7 @@ const EventPage = () => {
         date: '13/10/2024',
         venue: 'Main Auditorium',
         time: ' 09.00 AM onwards',
-        rulebook: "https://drive.google.com/file/d/1Tp050gHuWs8pANsC8mJAKdzVFRMFODxj/view?usp=drive_link",
+        rulebook: "https://drive.google.com/file/d/1Tr1BwmK2wyjHAJL6pe122y4HN19GXnVX/view?usp=sharing",
         link: "https://forms.gle/F4kZ7VUNVDEEUV3W7"
       },
       {
@@ -976,7 +980,7 @@ const EventPage = () => {
         date: '14 October 2024',
         venue: 'LT3',
         time: '9:00am',
-        rulebook: "https://drive.google.com/file/d/1cAHUib62XU5gRm873b3I5qa_BN5CdAQ5/view?usp=drive_link",
+        rulebook: "https://drive.google.com/file/d/19NCk4X01AmxMtOBm_PKBlJVlNxk9yskq/view?usp=sharing",
         link:"https://forms.gle/P2GYqXQ4WR64gqSQ7"
       },
       {
@@ -1000,7 +1004,7 @@ const EventPage = () => {
         date: '',
         venue: '',
         time: '',
-        rulebook: "https://drive.google.com/file/d/1NufiXpkxR7j9dQY-J61uEcUgG2o05fbi/view?usp=drive_link",
+        rulebook: "https://drive.google.com/file/d/1YiNrZ0aK0IYXcLo_4VKBmsD2UYuYQxOi/view?usp=sharing",
         link:"https://forms.gle/EMUg3N3MK9Rqfig49"
       },
       {
@@ -1024,7 +1028,7 @@ const EventPage = () => {
         date: '',
         venue: '',
         time: '',
-        rulebook: "https://drive.google.com/file/d/1NBITEXWYSS-57Y15483vNZe8LAc-ImM_/view?usp=drive_link",
+        rulebook: "https://drive.google.com/file/d/1Iiw3MvcnPWb1__wrkoxQji4N2DfN825T/view?usp=sharing",
         link:"https://forms.gle/1AnbygQnogpMvM7KA"
       }, {
         title: "Rip n Stitch",
@@ -1047,8 +1051,8 @@ const EventPage = () => {
         date: '',
         venue: '',
         time: '',
-        rulebook: "",
-        link:""
+        rulebook: "https://drive.google.com/file/d/1li9hZfR5jOeJZ4c4qxetHjgvC46L3j_H/view?usp=sharing",
+        link:"https://forms.gle/kVe43n8fHwNyzNDV8"
       },
       {
         title: "Cupid's Countdown",
@@ -1071,8 +1075,8 @@ const EventPage = () => {
         date: '',
         venue: '',
         time: '',
-        rulebook: "",
-        link:""
+        rulebook: "https://drive.google.com/file/d/1g1lKpyGvXg9oDmJpTQtoxgAS4e6Yj2E5/view?usp=sharing",
+        link:"https://forms.gle/vVchurakNnZadGS16"
       },
       {
         title: "Kavyotsav:",
@@ -1095,14 +1099,14 @@ const EventPage = () => {
         date: '',
         venue: '',
         time: '',
-        rulebook: "https://drive.google.com/file/d/1qyi7BKSrtp0yUk85CWcKrWKuKxp3pf3a/view?usp=drive_link",
+        rulebook: "https://drive.google.com/file/d/16MovwWtQu7jj-t_AGAMsJxSRdeadYIC6/view?usp=sharing",
         link:"https://forms.gle/4rkzEWgussYkPwhx7"
       },
       {
         title: "Prose the Pictures",
         registrationFees: "Rs. 50/- per person",
         status: "Inactive",
-        image: "Prose",
+        image: Prose,
         tagline: '',
         description: "Welcome to Rhapsody, where a series of evocative images guide your words to create a story that resonates them. Each picture holds a piece of a story—waiting for you to bring it to life.",
         teamSize: "",
@@ -1119,8 +1123,8 @@ const EventPage = () => {
         date: '',
         venue: '',
         time: '',
-        rulebook: "",
-        link:""
+        rulebook: "https://drive.google.com/file/d/1wr0vnmH0GphjA-wBNADcBcVkEtqA8VCj/view?usp=sharing",
+        link:"https://forms.gle/8Uvw5ht3YpUj5Myf7"
       },
       // {
       //   title: "Biocrux Jr",
@@ -1166,7 +1170,7 @@ const EventPage = () => {
         date: '',
         venue: '',
         time: '',
-        rulebook: "https://drive.google.com/file/d/1flSNXaDMXyqxkM-DnQrIC-XLde8o84hY/view?usp=drive_link",
+        rulebook: "https://drive.google.com/file/d/12RZfH8LIqvh3pjB3U0xgsJ62SbZ5Yfl2/view?usp=sharing",
         link:"https://forms.gle/fCMUkxaTqoJ41iHS6"
       },
       {
@@ -1190,7 +1194,7 @@ const EventPage = () => {
         date: '',
         venue: '',
         time: '',
-        rulebook: "https://drive.google.com/file/d/1sf1IW6e801X-LdYbL7Zv4ibgpz9FNkXr/view?usp=drive_link",
+        rulebook: "https://drive.google.com/file/d/1zTujAb0GTLBEpMF53ah7igRtVR0fdQ8P/view?usp=sharing",
         link:"https://forms.gle/gSSjY1xxFCugHxDa9"
       },
 
@@ -1343,7 +1347,7 @@ const EventPage = () => {
         date: '',
         venue: '',
         time: '',
-        rulebook: "https://drive.google.com/file/d/13vWvQHKbljpjy1VjoNtXTfD8c7zUNFtp/view?usp=drive_link",
+        rulebook: "https://drive.google.com/file/d/1KRujOaqWHpvGSdtC6UEDHt2OSjbadGhK/view?usp=sharing",
         link: "https://forms.gle/ZxY4RkBcBWoXz7Lg6"
       },
       {
@@ -1367,7 +1371,7 @@ const EventPage = () => {
         date: '',
         venue: '',
         time: '',
-        rulebook: "https://drive.google.com/file/d/1cK-tw-2qkzzNkYRjA2AhvM9cq8DzUQ5p/view?usp=drive_link",
+        rulebook: "https://drive.google.com/file/d/1MaStu-z_AHXbB2QUnxguP-3X9_1Pfl2x/view?usp=sharing",
         link: "https://forms.gle/AxabSdv2QQFoLeLZ9"
       },
 
@@ -1393,7 +1397,7 @@ const EventPage = () => {
         date: '',
         venue: '',
         time: '',
-        rulebook: "https://drive.google.com/file/d/1HmlfdJgxfAZ3LfpEiJ7H3fRGATY_RCGH/view?usp=drive_link",
+        rulebook: "https://drive.google.com/file/d/1jIUS4L5_yU9vV6TMtdb1rytF5CyNMcn6/view?usp=sharing",
         link: "https://forms.gle/jvUEeYcR2rEoYkv48" // This can be optional
       },
       // Add more events as needed
@@ -1418,7 +1422,7 @@ const EventPage = () => {
         date: '',
         venue: '',
         time: '',
-        rulebook: "https://drive.google.com/file/d/1blMAhADdQmcWgLqNrtIWbilb-lpN4V7S/view?usp=drive_link",
+        rulebook: "https://drive.google.com/file/d/1aK-Bzbnv5IQqk-w0CYvoS9jdpqUJ3dMy/view?usp=sharing",
         link: "https://forms.gle/dKdTKnd6a4BYmReS9"
       },
     ],
@@ -2055,7 +2059,7 @@ const EventPage = () => {
         title: "Badminton Doubles",
         registrationFees: "450",
         status: "Inactive",
-        image: "https://example.com/subevent1_1.jpg",
+        image: Badminton,
         tagline: '',
         description: "",
         teamSize: "",
@@ -2134,11 +2138,12 @@ const EventPage = () => {
 
   const handleEventClick = (event) => {
     setActiveEvent(event);
+    setIsOpen(false);
   };
 
   // Function to navigate to sub-event details page
   const goToSubEventDetails = (subEvent) => {
-    navigate('/subevent-details', { state: { subEvent } }); // Using navigate to handle page navigation
+    navigate('/subevent-details', { state: { subEvent, activeEvent } }); // Using navigate to handle page navigation
   };
 
   // Define different background styles
@@ -2152,7 +2157,6 @@ const EventPage = () => {
   //   "bg-gradient-to-br from-orange-400 via-orange-200 to-white",
   //   "bg-gradient-to-br from-pink-400 via-pink-200 to-white",
   //   "bg-gradient-to-br from-indigo-400 via-indigo-200 to-white",
-
   //   "bg-gradient-to-br from-gray-400 via-gray-200 to-white",
   // "bg-gradient-to-br from-amber-400 via-amber-200 to-white",
   //   "bg-gradient-to-br from-violet-400 via-violet-200 to-white",
@@ -2165,8 +2169,6 @@ const EventPage = () => {
   //   "bg-gradient-to-br from-cyan-400 via-cyan-200 to-white",
   //   "bg-gradient-to-br from-lime-400 via-lime-200 to-white",
   // ];
-
-
 
   // Function to get a gradient for each sub-event
   // const getBackgroundStyle = (index) => {
@@ -2189,25 +2191,49 @@ const EventPage = () => {
   const getBackgroundStyle = () => {
     return eventBackgroundColors[activeEvent] || "bg-gradient-to-br from-gray-400 via-gray-200 to-white";
   };
-
-  return (
-    <div className="relative bg-cover bg-center bg-fixed font-sans-serif poppins min-h-screen mt-16" style={{
-      backgroundImage: `url(${FixedBackground})`, backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      height: '100%',
-      width: '100%',
-    }}>
+    return (
+    <div
+      className="relative bg-cover bg-center bg-fixed font-sans-serif poppins min-h-screen mt-16"
+      style={{
+        backgroundImage: `url(${FixedBackground})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        height: '100%',
+        width: '100%',
+      }}
+    >
       {/* Sidebar for event categories */}
-      <div className={`fixed top-0 mt-16 left-0 h-full bg-[#001f3f] text-white transition-all ${isOpen ? 'w-64' : 'w-0'} overflow-x-hidden`}>
-        <button className="absolute top-0 mt-4 right-4 bg-[#001f3f] text-3xl text-white" onClick={closeNav}>
+      <div
+        className={`fixed top-0 mt-16 left-0 h-full bg-[#001f3f] text-white transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-64'} overflow-x-hidden`}
+        style={{ width: '16rem' }} // Width of the sidebar when open
+      >
+        <button
+          className="absolute top-0 mt-2 right-4 bg-[#001f3f] text-3xl text-white z-30 w-16 h-16 flex items-end justify-center hover:font-bold"
+          onClick={() => setIsOpen(false)}
+        >
           &times;
         </button>
-        <div className="mt-16 flex flex-col space-y-4 px-8 ">
-          <button onClick={() => handleEventClick("All Events")} className="text-lg hover:text-white text-left hover:font-bold">
+
+        {/* Invisible overlay around close button */}
+        <div
+          className={`absolute top-0 right-0 ${isOpen ? 'block' : 'hidden'} w-20 h-20`}
+          style={{ zIndex: 20 }}
+          onClick={() => setIsOpen(false)}
+        ></div>
+
+        <div className="mt-16 flex flex-col space-y-4 px-8">
+          <button
+            onClick={() => handleEventClick("All Events")}
+            className="text-lg hover:text-white text-left hover:font-bold"
+          >
             All
           </button>
           {Object.keys(events).map(event => (
-            <button key={event} onClick={() => handleEventClick(event)} className="text-lg hover:text-grey text-left hover:font-bold">
+            <button
+              key={event}
+              onClick={() => handleEventClick(event)}
+              className="text-lg hover:text-grey text-left hover:font-bold"
+            >
               {event}
             </button>
           ))}
@@ -2215,39 +2241,40 @@ const EventPage = () => {
       </div>
 
       {/* Main content area */}
-      <div className={`transition-all bg-cover bg-center bg-fixed p-4 ${isOpen ? 'ml-64' : 'ml-0'}`} >
-        <button className="bg-[#001f3f] text-white py-2 px-4 rounded fixed " onClick={openNav}>☰</button>
-        <h2 className="mt-6 mb-16 text-4xl md:text-6xl flex justify-center text-white font-semibold">{activeEvent === "All Events" ? "All Events" : activeEvent}</h2>
+      <div
+        className={`transition-transform duration-300 ease-in-out p-4 ${isOpen ? 'ml-64' : 'ml-0'}`}
+      >
+        {/* Toggle button */}
+        <button
+          className={`text-white px-2 hover:font-bold rounded fixed  left-0 z-40 w-12 h-12 flex items-end justify-start ${isOpen ? 'opacity-0' : 'opacity-100'}`}
+          onClick={() => setIsOpen(true)}
+        >
+          <p className='text-xl bg-[#001f3f] px-2 py-1 rounded fixed '>☰</p>
+        </button>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:gap-16 md:gap-12 gap-8 mt-4" >
+        {/* Invisible overlay for click area */}
+        <div
+          className={`absolute top-0 left-0 ${isOpen ? 'block' : 'hidden'} w-32 h-32`}
+          style={{ zIndex: 20 }}
+          onClick={() => setIsOpen(true)}
+        ></div>
+
+        <h2 className="mt-6 mb-16 text-4xl md:text-6xl flex justify-center text-white font-semibold">
+          {activeEvent === "All Events" ? "All Events" : activeEvent}
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:gap-16 md:gap-12 gap-8 mt-4">
           {(activeEvent === "All Events" ? allSubEvents : events[activeEvent]).map((subEvent, index) => (
             <div
               key={index}
               className={`rounded-lg shadow-lg p-4 ${getBackgroundStyle(index)} hover:bg-gradient-to-b transition-all duration-500`}
               onClick={() => goToSubEventDetails(subEvent)}
             >
-              <div className=" p-6 text-lg md:text-xl " >
-                <h3 className="text-xl md:text-2xl font-semibold  mb-8">{subEvent.title}</h3>
-                {/* {subEvent.image && (
-                <img
-                  src={subEvent.image}
-                  alt={subEvent.title}
-                  className="w-full h-48 object-cover rounded-lg mb-4"
-                />
-              )} */}
-                <div className='flex-col justify-center items-center bottom-2'>
-                  {subEvent.registrationFees && (
-                    <p className="mt-4 text-xl md:text-2xl mb-2">Fees:{subEvent.registrationFees}</p>
-                  )}
-
-
-                  {/* <button
-                  onClick={() => goToSubEventDetails(subEvent)}
-                  className="text-[#001f3f] font-bold text-2xl hover:underline mt-1"
-                >
-                  →
-                </button> */}
-                </div>
+              <div className="p-6 text-lg md:text-xl">
+                <h3 className="text-xl md:text-2xl font-semibold mb-8">{subEvent.title}</h3>
+                {subEvent.registrationFees && (
+                  <p className="mt-4 text-xl md:text-2xl mb-2">Fees: {subEvent.registrationFees}</p>
+                )}
               </div>
             </div>
           ))}
