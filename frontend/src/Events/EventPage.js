@@ -44,7 +44,7 @@ import Euphonia from "../Image/Euphonia.jpeg";
 import Echoes from "../Image/Echoes and Expressions.webp";
 import Drapeit from "../Image/Drape it.JPG";
 import DartySecrets from "../Image/Darty Secrets.JPG";
-import Cupid from "../Image/Cupid's Countdown.jpg";
+import Cupid from "../Image/Cupid_s Countdown.jpg";
 import Cupful from "../Image/Cupful of doodles.png";
 import Cricket from "../Image/Cricket.PNG";
 import ContrastChronicles from "../Image/Contrast chronicles.png";
