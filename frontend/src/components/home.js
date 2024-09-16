@@ -1,5 +1,5 @@
 import React from 'react';
-import video1 from '../Images/Trailer Clip.mp4';
+import video1 from '../Images/Trailer Clip final.mp4';
 import { useNavigate } from 'react-router-dom';
 import Slider1 from "../Animation/slider.js";
 import CountdownTimer from './timer';
@@ -37,7 +37,7 @@ const Home = () => {
           <LeftVideoAnimation
             videoSrc={video1}
             videoAlt="Sample Video"
-            videoClasses="mx-auto lg:w-[75%] md:w-[90%] w-[100%] h-auto mt-24"
+            videoClasses="mx-auto lg:w-[70%] md:w-[60%] w-[100%] min-h-screen mt-16 md:mt-20"
           />
           {/* Text and Buttons */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4 top-1/3 lg:top-0">
