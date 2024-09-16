@@ -46,15 +46,12 @@ const Accomodation = () => {
                             <ul className="list-disc list-inside"> Boys
                                 <li className="leading-8 my-3">
                                 Sunil meena : 9358677455
-
                                 </li>
                                 <li className="leading-8 my-3">
                                 Sanjay kumawat : 87408 31837
-
                                 </li>
                                 <li className="leading-8 my-3">
                                 Tushar kamboj :9518256360
-
                                 </li>
                                
                             
@@ -63,11 +60,10 @@ const Accomodation = () => {
                             <ul className="list-disc list-inside"> Girls
                                 <li className="leading-8 my-3">
                                 Khushi beniwal : 81689 01185
-
                                 </li>
                                 <li className="leading-8 my-3">
-                                Samiksha Pradhan : 72059 95802
-                                </li>
+                             Samiksha Pradhan : 72059 95802
+                        </li>
                               
                             </ul>
                         
