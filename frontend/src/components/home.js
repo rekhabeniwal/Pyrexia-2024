@@ -21,7 +21,7 @@ const Home = () => {
       
   };
   const handleNavigate2 = () => {
-    navigate('/events');
+     navigate('/events/All Events');
   }
   return (
     <div className="relative w-full min-h-screen">
