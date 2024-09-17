@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Accomodation = () => {
-    document.title = "Registration | Pyrexia 2024"; // Set page title
+    // document.title = "Registration | Pyrexia 2024"; 
 
     // Contact data for boys and girls
     const contacts = {
@@ -20,7 +20,7 @@ const Accomodation = () => {
         <div className='bg-[#001f3f] min-h-screen'>
             {/* Header Section */}
             <div className="relative pt-28 pb-16 flex items-center justify-center">
-                <h1 className="text-[#ebe6d0] text-center text-[3.5rem] font-semibold leading-[4.5rem] z-10 md:text-[3.7rem] md:px-12 md:leading-[3.5rem]">
+                <h1 className="text-[#ebe6d0] text-center text-[2.5rem] font-semibold leading-[3.5rem] z-10 md:text-[2.7rem] md:px-12 md:leading-[2.5rem]">
                     Accomodation
                 </h1>
             </div>
