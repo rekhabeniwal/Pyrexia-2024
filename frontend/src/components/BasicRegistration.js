@@ -17,16 +17,13 @@ const BasicRegistration = () => {
         <div className="backdrop-blur-sm rounded-xl  m-auto h-fit p-6 m-auto lg:px-10">
           <div className="px-4 md:px-10 lg:px-10 text-lg font-light text-justify max-w-4xl border pt-10  pb-10">
             <p className="mb-4">
-              1. Basic Registration is essential for all participants to gain access to various events and activities.
+              1. It is mandatory for entry into AIIMS Rishikesh premises during the fest.
             </p>
             <p className="mb-4">
               2. It serves as your official identification throughout the fest, ensuring seamless entry and participation.
             </p>
             <p className="mb-4">
-              3. It is mandatory for entry into AIIMS Rishikesh premises during the fest.
-            </p>
-            <p className="mb-4">
-              4. Registration is required to ensure smooth coordination and participation in the fest.
+              3. Registration is required to ensure smooth coordination and participation in the fest.
             </p>
             <p className="font-bold text-lg">Cost: ₹200</p>
           </div>
