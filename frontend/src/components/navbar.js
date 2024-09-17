@@ -31,7 +31,7 @@ const Navbar = () => {
       });
   };
   const handleEventClick = () => {
-    navigate('/events', { state: { activeEvent: 'All Events' } });
+   navigate('/events/All Events', { state:'All Events'});
   };
   const buttonClasses = 'text-gray-100  flex justify-center font-bold text-sm px-2 py-1 border-2 border-gray-100 hover:bg-gray-100 hover:text-gray-800 rounded-lg transition duration-300';
 
