@@ -2028,7 +2028,7 @@ const EventPage = () => {
         date: '',
         venue: '',
         time: '',
-        rulebook: "https://drive.google.com/file/d/1qbM_fxfCM4-4ZrURzmlCCP_5NnV38-I-/view?usp=drive_link",
+        rulebook: "https://drive.google.com/file/d/1Om9FAm5DAwbsjgsSae_3lzOxB1fHmi8F/view?usp=sharing",
         link: "https://forms.gle/huBpo9rx1c5HPXnW6"
       },
       {
