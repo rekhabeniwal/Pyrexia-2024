@@ -6,11 +6,9 @@ const SubEventDetails = () => {
   const subEvent = location.state?.subEvent; // Use optional chaining in case state is undefined
   const navigate = useNavigate();
   const activeEvent = location.state?.activeEvent;
-  console.log(subEvent)
-
-
+  
   const handleClick = () => {
-    navigate('/events', { state: { activeEvent } });
+     navigate(`/events/${activeEvent}`);
   };
 
 
