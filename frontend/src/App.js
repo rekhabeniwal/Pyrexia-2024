@@ -41,7 +41,7 @@ function App() {
           <Route path='/forgotpassword' element={<ForgotPassword />}></Route>
           <Route path='/resetpassword' element={<ResetPassword />}></Route>
           <Route path='/emailverification' element={<EmailVerification />}></Route>
-          <Route path="/events" element={<EventPage />}></Route>
+          <Route path="/events/:eventName" element={<EventPage />}></Route>
           <Route path="/profile" element={<ProtectedRoute element={Profile} />} />
           <Route path="/registerevent" element={<ProtectedRoute element={RegisterSoon} />} />
 
