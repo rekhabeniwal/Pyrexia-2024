@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate ,useParams} from 'react-router-dom';
 import FixedBackground from '../Images/cimg4.webp';
 
 import YPOM from "../Image/Your Pace or Mine.JPG";
@@ -69,31 +69,12 @@ import Adaptune from "../Image/ADaptune.jpeg";
 import Acrylicodyssey from "../Image/Acrylic odyssey.png";
 
 const EventPage = () => {
-  const location = useLocation();
-  const eventHome = location.state?.events;
   const [isOpen, setIsOpen] = useState(false);
-  const [activeEvent, setActiveEvent] = useState("All Events");
-
-
-
-
-  useEffect(() => {
-    if (location.state?.activeEvent) {
-      setActiveEvent(location.state.activeEvent);
-    }
-  }, [location.state]);
-
-  useEffect(() => {
-    if (eventHome) {
-      setActiveEvent(eventHome);
-    }
-  }, [eventHome]);
-
-
-  const navigate = useNavigate(); // React Router's navigate for navigation
-
-
-
+  const { eventName } = useParams();
+  const [activeEvent, setActiveEvent] =  useState("All Events");
+  const location = useLocation();
+  const navevent=location.state;
+  const navigate = useNavigate(); 
 
   const events = {
     "Alfresco": [
@@ -2028,7 +2009,7 @@ const EventPage = () => {
         date: '',
         venue: '',
         time: '',
-        rulebook: "https://drive.google.com/file/d/1Om9FAm5DAwbsjgsSae_3lzOxB1fHmi8F/view?usp=sharing",
+        rulebook: "https://drive.google.com/file/d/1qbM_fxfCM4-4ZrURzmlCCP_5NnV38-I-/view?usp=drive_link",
         link: "https://forms.gle/huBpo9rx1c5HPXnW6"
       },
       {
@@ -2134,46 +2115,29 @@ const EventPage = () => {
     ]
 
   };
+
+  useEffect(() => {
+    if (eventName && events[eventName]) {
+        setActiveEvent(eventName); // Set the active event based on the URL parameter
+    } 
+    else if(navevent){
+      setActiveEvent("All Events");
+
+    }
+}, [eventName]);
+
   const allSubEvents = Object.keys(events).flatMap(event => events[event]);
 
   const handleEventClick = (event) => {
     setActiveEvent(event);
     setIsOpen(false);
+    navigate(`/events/${event}`); 
   };
 
   // Function to navigate to sub-event details page
   const goToSubEventDetails = (subEvent) => {
     navigate('/subevent-details', { state: { subEvent, activeEvent } }); // Using navigate to handle page navigation
   };
-
-  // Define different background styles
-  // const gradientColors = [
-  //   "bg-gradient-to-br from-blue-400 via-blue-200 to-white",
-  //   "bg-gradient-to-br from-red-400 via-red-200 to-white",
-  //   "bg-gradient-to-br from-green-400 via-green-200 to-white",
-  //   "bg-gradient-to-br from-yellow-400 via-yellow-200 to-white",
-  //   "bg-gradient-to-br from-purple-400 via-purple-200 to-white",
-  //   "bg-gradient-to-br from-teal-400 via-teal-200 to-white",
-  //   "bg-gradient-to-br from-orange-400 via-orange-200 to-white",
-  //   "bg-gradient-to-br from-pink-400 via-pink-200 to-white",
-  //   "bg-gradient-to-br from-indigo-400 via-indigo-200 to-white",
-  //   "bg-gradient-to-br from-gray-400 via-gray-200 to-white",
-  // "bg-gradient-to-br from-amber-400 via-amber-200 to-white",
-  //   "bg-gradient-to-br from-violet-400 via-violet-200 to-white",
-  //   "bg-gradient-to-br from-fuchsia-400 via-fuchsia-200 to-white",
-  //   "bg-gradient-to-br from-rose-400 via-rose-200 to-white",
-  //   "bg-gradient-to-br from-emerald-400 via-emerald-200 to-white",
-  //   "bg-gradient-to-br from-sky-400 via-sky-200 to-white",
-  //   "bg-gradient-to-br from-fuchsia-400 via-fuchsia-200 to-white",
-  //   "bg-gradient-to-br from-neutral-400 via-neutral-200 to-white",
-  //   "bg-gradient-to-br from-cyan-400 via-cyan-200 to-white",
-  //   "bg-gradient-to-br from-lime-400 via-lime-200 to-white",
-  // ];
-
-  // Function to get a gradient for each sub-event
-  // const getBackgroundStyle = (index) => {
-  //   return gradientColors[index % gradientColors.length];
-  // };
 
   const eventBackgroundColors = {
     "Alfresco": "bg-gradient-to-br from-lime-300 via-lime-100 to-white",
@@ -2191,7 +2155,7 @@ const EventPage = () => {
   const getBackgroundStyle = () => {
     return eventBackgroundColors[activeEvent] || "bg-gradient-to-br from-gray-400 via-gray-200 to-white";
   };
-    return (
+  return (
     <div
       className="relative bg-cover bg-center bg-fixed font-sans-serif poppins min-h-screen mt-16"
       style={{
@@ -2224,7 +2188,7 @@ const EventPage = () => {
         <div className="mt-16 flex flex-col space-y-4 px-8">
           <button
             onClick={() => handleEventClick("All Events")}
-            className="text-lg hover:text-white text-left hover:font-bold"
+            className="text-lg hover:text-white text-left hover:font-bold "
           >
             All
           </button>
@@ -2246,15 +2210,15 @@ const EventPage = () => {
       >
         {/* Toggle button */}
         <button
-          className={`text-white px-2 hover:font-bold rounded fixed  left-0 z-40 w-12 h-12 flex items-end justify-start ${isOpen ? 'opacity-0' : 'opacity-100'}`}
+          className={`text-white px-2 hover:font-bold rounded fixed  left-0 z-40 w-12 h-12 flex items-end justify-start ${isOpen ?  'ml-64' : 'ml-0'}`}
           onClick={() => setIsOpen(true)}
         >
-          <p className='text-xl bg-[#001f3f] px-2 py-1 rounded fixed '>☰</p>
+          <p className={`text-xl bg-[#001f3f] px-2 py-1 rounded fixed ${isOpen ?  'opacity-0' : 'opacity-100' } `}>☰</p>
         </button>
 
         {/* Invisible overlay for click area */}
         <div
-          className={`absolute top-0 left-0 ${isOpen ? 'block' : 'hidden'} w-32 h-32`}
+          className={`absolute top-0 left-0 ${isOpen ? 'ml-64' : 'ml-0' } w-28 h-28`}
           style={{ zIndex: 20 }}
           onClick={() => setIsOpen(true)}
         ></div>
