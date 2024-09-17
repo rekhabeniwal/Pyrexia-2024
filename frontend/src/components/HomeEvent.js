@@ -30,7 +30,7 @@ const HomeEvent = () => {
   const navigate = useNavigate();
 
   const handleImageClick=(events)=>{
-    navigate("/events",{state:{events}});
+     navigate(`/events/${events}`, { state: { events } });
   };
 
   return (
