@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import axios from 'axios';
-
+import {BASE_URL} from "../BaseUrl"
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
@@ -9,7 +9,7 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
     const checkAuth = async () => {
       try {
-        const response = await axios.get('http://localhost:6005/login/success', { withCredentials: true });
+        const response = await axios.get(``${BASE_URL}/login/success`, { withCredentials: true });
         setIsAuthenticated(response.data.success);
       } catch (error) {
         setIsAuthenticated(false);
