@@ -98,10 +98,12 @@ const SubEventDetails = () => {
           </a>
         )}
 
-        <button >
-          <a className="block bg-[#001f3f] hover:bg-gradient-to-t from-blue-800 via-blue-500 to-navy-700 , text-white mt-4 py-2 px-4 rounded text-md  md:text-lg "
-           href={subEvent.link}>Register</a>
-        </button>
+       <button 
+  className="block bg-[#001f3f] hover:bg-gradient-to-t from-blue-800 via-blue-500 to-blue-400 text-white mt-4 py-2 px-4 rounded text-md  md:text-lg"
+  onClick={() => window.location.href = subEvent.link}
+>
+  Register
+</button>
       </div>
     </div>
   );
