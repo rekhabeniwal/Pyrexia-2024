@@ -34,7 +34,7 @@ const Footer = () => {
                 <div data-aos="fade-up" className='mt-10 w-[100%] md:w-[100%] lg:w-[100%] order-2 md:order-2 lg:order-2'>
                     <div className='flex items-center justify-start'><h1 className='font-extrabold text-2xl text-blue-700 mr-3'>|</h1><h1 className='text-lg font-bold'>Useful Links</h1></div>
                     <ul className='mt-4 flex flex-col gap-3 text-base'>
-                        <li className='hover:text-blue-600 text-white'><Link to="/events">Events</Link></li>
+                        <li className='hover:text-blue-600 text-white'><Link to="/events/All Events">Events</Link></li>
                         <li className='hover:text-blue-600 text-white'><Link to="/basic-registration">Basic Registration</Link></li>
                         <li className=' hover:text-blue-600 text-white'><Link to="/schedule">Event Schedule</Link></li>
                         <li className=' hover:text-blue-600 text-white'><Link to="/starnight">Star Night</Link></li>
