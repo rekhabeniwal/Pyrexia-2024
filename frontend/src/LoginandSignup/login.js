@@ -13,7 +13,7 @@ const Login = () => {
     const handleLogin = async(e) => {
         e.preventDefault();
         try {
-            const response = await axios.post(``${BASE_URL}/login`, { email, password });
+            const response = await axios.post(`${BASE_URL}/login`, { email, password });
             alert(response.data.message);
             if (response.data.success) {
                 navigate('/'); // redirect to dashboard on successful login
@@ -26,7 +26,7 @@ const Login = () => {
     };
 
     const loginWithGoogle = () => {
-        window.open(``${BASE_URL}/auth/google/callback`, "_self");
+        window.open(`${BASE_URL}/auth/google/callback`, "_self");
     };
 
     return (
