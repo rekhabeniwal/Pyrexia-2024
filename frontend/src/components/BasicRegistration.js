@@ -30,11 +30,11 @@ const BasicRegistration = () => {
 
           {/* Register Button */}
           <div className="flex justify-center items-center mt-10 p-4">
-            <button>
-            <a 
+            <button
               className="bg-[#ebe6d0] hover:bg-gradient-to-t from-blue-500 to-white text-black px-6 py-2.5 rounded-lg font-bold text-sm border-black hover:bg-[#d9d2b8] transition duration-300"
-
-              href="https://forms.gle/PRjwsH44sZiHBaUr5">Register Now</a>
+              onClick={() => window.location.href = "https://forms.gle/PRjwsH44sZiHBaUr5"}
+            >
+              Register Now
             </button>
           </div>
 
