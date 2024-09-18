@@ -9,7 +9,7 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
     const checkAuth = async () => {
       try {
-        const response = await axios.get(``${BASE_URL}/login/success`, { withCredentials: true });
+        const response = await axios.get(`${BASE_URL}/login/success`, { withCredentials: true });
         setIsAuthenticated(response.data.success);
       } catch (error) {
         setIsAuthenticated(false);
