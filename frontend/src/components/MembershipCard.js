@@ -40,10 +40,10 @@ const MembershipCard = () => {
           </div>
 
           {/* Register Button */}
-          <div className="flex justify-center items-center mt-8 p-4">
+                    <div className="flex justify-center items-center mt-10 p-4">
             <button
-              className="bg-gradient-to-t from-blue-500 to-[#ebe6d0] text-black px-8 py-3 rounded-lg font-bold text-lg border-2 border-[#d9d2b8] shadow-md hover:shadow-lg transition duration-300"
-              onClick={() => window.location.href = "https://forms.gle/PRjwsH44sZiHBaUr5"}
+              className="bg-[#ebe6d0] hover:bg-gradient-to-t from-blue-500 to-white text-black px-6 py-2.5 rounded-lg font-bold text-sm border-black hover:bg-[#d9d2b8] transition duration-300"
+              onClick={() => window.location.href = "https://forms.gle/3rCCkwJJ7R6EhY2J7"}
             >
               Register Now
             </button>
