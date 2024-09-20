@@ -25,7 +25,7 @@ import Legals from './Legals/Legals';
 import Schedule from './components/Schedule';
 import BasicRegistration from './components/BasicRegistration';
 import Accomodation from './components/Accomodation';
-
+import MembershipCard from './components/MembershipCard';
 function App() {
   return (
     <AuthProvider>
@@ -44,7 +44,7 @@ function App() {
           <Route path="/events/:eventName" element={<EventPage />}></Route>
           <Route path="/profile" element={<ProtectedRoute element={Profile} />} />
           <Route path="/registerevent" element={<ProtectedRoute element={RegisterSoon} />} />
-
+          <Route path='/membership-card' element={<MembershipCard />}></Route>
 
           <Route path="/paymentsuccess" element={<PaymentSuccess />} />
           <Route path="/payment" element={<Payment />} />
