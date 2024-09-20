@@ -20,6 +20,10 @@ const Home = () => {
       navigate('/basic-registration');
       
   };
+    const handleNavigate1 = () => {
+      navigate('/membership-card');
+      
+  };
   const handleNavigate2 = () => {
      navigate('/events/All Events');
   }
@@ -49,6 +53,9 @@ const Home = () => {
             <div className="flex flex-col items-center gap-4 mt-8 lg:mt-12 lg:flex-row lg:items-start lg:absolute md:bottom-16 lg:left-[10%]">
               <button className="bg-[#001f3f] text-xl border-2 border-gray-100 font-bold py-3 px-5  hover:text-gray-800 rounded-lg transition duration-300 hover:bg-gray-100 hover:bg-gradient-to-t from-blue-800 via-blue-500 to-navy-700" onClick={handleNavigate1} >
                 Basic Registration
+              </button>
+               <button className="bg-[#001f3f] text-xl border-2 border-gray-100 font-bold py-3 px-5  hover:text-gray-800 rounded-lg transition duration-300 hover:bg-gray-100 hover:bg-gradient-to-t from-blue-800 via-blue-500 to-navy-700" onClick={handleNavigate3} >
+                Pyrexia Membership Card 
               </button>
 
               <button className="bg-[#001f3f] text-xl border-2 border-gray-100 font-bold py-3 px-5 hover:bg-gray-100 hover:text-gray-800 rounded-lg transition duration-300 hover:bg-gradient-to-t from-blue-800 via-blue-500 to-navy-700" onClick={handleNavigate2}>
