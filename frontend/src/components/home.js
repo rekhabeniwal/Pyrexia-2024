@@ -20,7 +20,7 @@ const Home = () => {
       navigate('/basic-registration');
       
   };
-    const handleNavigate1 = () => {
+    const handleNavigate3 = () => {
       navigate('/membership-card');
       
   };
