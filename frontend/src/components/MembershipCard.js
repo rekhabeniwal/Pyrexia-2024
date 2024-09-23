@@ -26,12 +26,12 @@ const MembershipCard = () => {
             </ul>
 
             <div className="font-bold text-lg italic sant-serif poppins">
-              <span className="line-through text-gray-500">Rs. 1800</span> 
-              <span className="text-[#ebe6d0]"> Rs. 1599</span>
+              // <span className="line-through text-gray-500">Rs. 1800</span> 
+              <span className="text-[#ebe6d0]"> Rs. 1800</span>
             </div>
 
             <p className="mt-12 text-center italic text-lg">
-              Grab this amazing deal before it's gone!
+              // Grab this amazing deal before it's gone!
             </p>
 
             <p className="mt-4 text-center italic text-md text-gray-400">
