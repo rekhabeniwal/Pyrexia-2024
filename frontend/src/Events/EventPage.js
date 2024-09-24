@@ -913,7 +913,7 @@ const EventPage = () => {
         date: '12/10/2024',
         venue: '',
         time: '09.00 AM onwards',
-        rulebook: "https://drive.google.com/file/d/17m1G_5CFdnRadLO8Ycy0tFW1f1Ux6pp-/view?usp=sharing",
+        rulebook: "https://drive.google.com/file/d/1T3xWforNBZ8Icirw6K2fUD36Hj3FkfgK/view?usp=sharing",
         link: "https://forms.gle/oy9tEnWickw7EF7Y8"
       },
       {
@@ -937,7 +937,7 @@ const EventPage = () => {
         date: '13/10/2024',
         venue: 'Main Auditorium',
         time: ' 09.00 AM onwards',
-        rulebook: "https://drive.google.com/file/d/1Tr1BwmK2wyjHAJL6pe122y4HN19GXnVX/view?usp=sharing",
+        rulebook: "https://drive.google.com/file/d/1IbznYefZg2ylKMglranJlZcpxK7UKtQB/view?usp=sharing",
         link: "https://forms.gle/F4kZ7VUNVDEEUV3W7"
       },
       {
