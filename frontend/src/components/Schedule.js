@@ -18,7 +18,7 @@ const Schedule = () => {
   ];
 
   return (
-    <div className="container mx-auto p-6 font-sant-serif poppins mt-10 bg-gradient-to-b from-[#001f3f] to-black">
+    <div className=" mx-auto p-6 font-sant-serif poppins mt-10 bg-gradient-to-b from-[#001f3f] to-black w-full h-full">
       {/* Main Image Section */}
       <div className="relative w-full h-auto flex  justify-center items-center mt-8  rounded-lg overflow-hidden mb-10 ">
         <img
