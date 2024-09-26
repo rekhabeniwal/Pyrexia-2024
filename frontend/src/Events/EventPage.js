@@ -1865,7 +1865,7 @@ const EventPage = () => {
         venue: '',
         time: '',
         rulebook: "https://drive.google.com/file/d/1pv6yU22vazu1LWjyJdmxF3F9CSkGO-dj/view?usp=drive_link",
-        link: "https://forms.gle/1AcydsY1XKioYdX49"
+        link: "https://forms.gle/mTx1ykDH6vfXSGHq5"
       },
       
       {
