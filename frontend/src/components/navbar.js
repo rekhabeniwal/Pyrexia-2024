@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
@@ -55,6 +56,8 @@ const Navbar = () => {
       <Link to="/starnight" className={buttonClasses}>Star Night</Link>
       <a href="https://drive.google.com/file/d/12CP4PlhrVhJ4Hi_NVYIhn5B-wWi2q3kr/view?usp=drive_link" className={buttonClasses}>Brochure</a>
       <Link to="/accomodation" className={buttonClasses}>Accomodation</Link>
+      <Link to="/schedule" className={buttonClasses}>Schedule</Link>
+      <Link to="/membership-card" className={buttonClasses}>MemberShip Card</Link>
 {/* <Link to="/login" className={buttonClasses}>Login</Link> */}
       {/* <Link to="/cart" className={buttonClasses}> &#128722;</Link> */}
     </>
