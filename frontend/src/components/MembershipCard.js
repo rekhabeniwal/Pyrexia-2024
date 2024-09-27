@@ -23,6 +23,7 @@ const MembershipCard = () => {
               <li>4. Unique Experiences</li>
               <li>5. Unforgettable Moments</li>
               <li>6. Lifetime Memories</li>
+              <li>7. Free access to the pro nites</li>
             </ul>
 
             <div className="font-bold text-lg italic sant-serif poppins">
